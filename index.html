@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroSketch Drawing</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="retro-filter"></div>
+    <div class="container">
+        <header>
+            <h1 class="title">RetroSketch</h1>
+            <p class="subtitle">Travel back in time with every stroke...</p>
+        </header>
+        <div class="canvas-container">
+            <canvas id="drawing-canvas"></canvas>
+            <div class="tools">
+                <button class="tool-btn active" id="pencil">
+                    <i class="fas fa-pencil-alt"></i> Pencil
+                </button>
+                <button class="tool-btn" id="brush">
+                    <i class="fas fa-paint-brush"></i> Brush
+                </button>
+                <button class="tool-btn" id="eraser">
+                    <i class="fas fa-eraser"></i> Eraser
+                </button>
+                <input type="color" class="color-picker" id="color-picker" value="#463E3F">
+                <input type="range" class="size-slider" id="size-slider" min="1" max="50" value="5">
+                <button class="tool-btn" id="clear">
+                    <i class="fas fa-trash"></i> Clear
+                </button>
+                <button class="tool-btn" id="save">
+                    <i class="fas fa-save"></i> Save
+                </button>
+                <button class="tool-btn" id="sound-toggle">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Site. Made By <a href="https://www.linkedin.com/in/Momo">Momo</a></p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
